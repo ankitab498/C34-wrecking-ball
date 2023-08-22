@@ -35,8 +35,7 @@ function setup() {
   box19 = new Box(700, 100, 70, 70);
   box20 = new Box(700, 100, 70, 70);
 
-  ball = new Ball(200, 200, 80, 80);
-  rope = new Rope(ball.body, { x: 500, y: 50 });
+ // create the objects for ball and rope
 
 }
 
@@ -66,16 +65,10 @@ function draw() {
   box20.display()
   
 
-  ball.display();
-  rope.display();
-
+  // display ball and rope
 
 
 }
 
-
-function mouseDragged() {
-  Matter.Body.setPosition(ball.body, { x: mouseX, y: mouseY });
-}
-
+// define mouseDragged()
 
