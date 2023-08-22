@@ -8,8 +8,9 @@ class Rope {
     };
 
     this.pointB = pointB;
-    this.rope = Constraint.create(options);
-    World.add(world, this.rope);
+
+    // create the constraint and add into the world
+    
   }
   attach(body) {
     this.rope.bodyA = body;
@@ -28,7 +29,7 @@ class Rope {
       stroke(48, 22, 8);
       strokeWeight(3);
 
-      line(pointB.x, pointB.y, pointA.x, pointA.y);
+      // create the line
 
       pop();
     }
